@@ -7,21 +7,17 @@
   <title>Formspree</title>
 </head>
 <body>
-  test
-  <form action="https://formkeep.com/f/dc36c8babe2b"
-   accept-charset="UTF-8"
-   enctype="multipart/form-data"
-   method="POST">
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <div id="my-reform"></div>
+
+  <script>window.Reform=window.Reform||function(){(Reform.q=Reform.q||[]).push(arguments)};</script>
+  <script id="reform-script" async src="https://embed.reform.app/v1/embed.js"></script>
+  <script>
+      Reform('init', {
+          url: 'https://forms.reform.app/xSisf3/untitled-form/voav1c',
+          target: '#my-reform',
+          background: 'default',
+      })
+  </script>
 </form>
 </body>
 </html>
