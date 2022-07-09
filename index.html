@@ -7,17 +7,16 @@
   <title>Formspree</title>
 </head>
 <body>
-  <div id="my-reform"></div>
-
-  <script>window.Reform=window.Reform||function(){(Reform.q=Reform.q||[]).push(arguments)};</script>
-  <script id="reform-script" async src="https://embed.reform.app/v1/embed.js"></script>
-  <script>
-      Reform('init', {
-          url: 'https://forms.reform.app/xSisf3/untitled-form/voav1c',
-          target: '#my-reform',
-          background: 'default',
-      })
-  </script>
+  <form action="https://api.staticforms.xyz/submit" method="post">
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="text" name="email" placeholder="Your Email" />
+    <textarea name="message"></textarea>
+    <input type="text" name="honeypot" style="display:none">
+    <input type="hidden" name="accessKey" value="762e2e4b-c7fb-430f-b3a1-b9a2446fac4f">
+    <input type="hidden" name="subject" value="Contact us from - example.com" />
+    <input type="hidden" name="replyTo" value="rsonroad@gmail.com">
+    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+    <input type="submit" value="Submit" />
 </form>
 </body>
 </html>
